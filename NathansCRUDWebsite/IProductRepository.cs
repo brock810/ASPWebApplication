@@ -7,6 +7,6 @@ namespace NathansCRUDWebsite
     public interface IProductRepository
     {
         public IEnumerable<Product> GetAllProducts();
-        public ProductRepo GetProduct(int id);
+        public Product GetProduct(int id);
     }
 }

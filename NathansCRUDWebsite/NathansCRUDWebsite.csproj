@@ -11,9 +11,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\NewFolder\" />
-    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\Employees.cs" />
+    <Compile Remove="ProductRepo.cs" />
   </ItemGroup>
 </Project>

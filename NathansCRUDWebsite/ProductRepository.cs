@@ -18,9 +18,11 @@ namespace NathansCRUDWebsite
             return _conn.Query<Product>("Select * from products");
         }
 
-        public ProductRepo GetProduct(int id)
+        public Product GetProduct(int id)
         {
-            throw new System.NotImplementedException();
+         return _conn.QuerySingle<Product>("SELECT * FROM PRODUCTS WHERER PRODUCTID = @id",
+                new { id = id});
         }
+
     }
 }
