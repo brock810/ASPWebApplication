@@ -3,10 +3,11 @@ using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using NathansCRUDWebsite.Models;
 using MySql.Data.MySqlClient;
+using System.Security.Cryptography.X509Certificates;
 
 namespace NathansCRUDWebsite
 {
-    public class ProductRepo
+    public class ProductRepo 
     {
         public static string connectionString;
 
@@ -120,6 +121,10 @@ namespace NathansCRUDWebsite
                 cmd.Parameters.AddWithValue("id", id);
                 cmd.ExecuteNonQuery();
             }
+
         }
+      
+        }
+
     }
-}
+
